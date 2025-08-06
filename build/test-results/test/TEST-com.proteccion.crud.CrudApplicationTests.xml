@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.proteccion.crud.CrudApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-06T14:29:19.783Z" hostname="02-5CD147CLH7" time="2.414">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.proteccion.crud.CrudApplicationTests" time="2.414"/>
+  <system-out><![CDATA[09:29:07.226 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.proteccion.crud.CrudApplicationTests]: CrudApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:29:07.546 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.proteccion.crud.CrudApplication for test class com.proteccion.crud.CrudApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.4)
+
+2025-08-06T09:29:08.538-05:00  INFO 40232 --- [crud] [    Test worker] c.proteccion.crud.CrudApplicationTests   : Starting CrudApplicationTests using Java 21.0.7 with PID 40232 (started by EmmanuelAM in C:\Users\emmanuelam\Projects\Prueba-proteccion)
+2025-08-06T09:29:08.541-05:00  INFO 40232 --- [crud] [    Test worker] c.proteccion.crud.CrudApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2025-08-06T09:29:10.831-05:00  INFO 40232 --- [crud] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-06T09:29:11.002-05:00  INFO 40232 --- [crud] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 2 JPA repository interfaces.
+2025-08-06T09:29:12.310-05:00  INFO 40232 --- [crud] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-06T09:29:12.451-05:00  INFO 40232 --- [crud] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-06T09:29:12.550-05:00  INFO 40232 --- [crud] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-06T09:29:13.323-05:00  INFO 40232 --- [crud] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-06T09:29:13.403-05:00  INFO 40232 --- [crud] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-06T09:29:13.782-05:00  INFO 40232 --- [crud] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b3d869
+2025-08-06T09:29:13.787-05:00  INFO 40232 --- [crud] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-06T09:29:13.872-05:00  WARN 40232 --- [crud] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-06T09:29:13.874-05:00  WARN 40232 --- [crud] [    Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-08-06T09:29:13.902-05:00  INFO 40232 --- [crud] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-06T09:29:15.626-05:00  INFO 40232 --- [crud] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table tasks modify column description varchar(255)
+Hibernate: alter table users modify column email varchar(255) not null
+Hibernate: alter table users modify column username varchar(255) not null
+2025-08-06T09:29:16.191-05:00  INFO 40232 --- [crud] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-06T09:29:17.360-05:00  WARN 40232 --- [crud] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-06T09:29:18.137-05:00  INFO 40232 --- [crud] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-08-06T09:29:18.406-05:00 DEBUG 40232 --- [crud] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-08-06T09:29:19.733-05:00  INFO 40232 --- [crud] [    Test worker] c.proteccion.crud.CrudApplicationTests   : Started CrudApplicationTests in 11.64 seconds (process running for 16.172)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\emmanuelam\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy-agent\1.17.6\17b32fd9f57deef02842f7f05abc4ad8127fe34e\byte-buddy-agent-1.17.6.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
